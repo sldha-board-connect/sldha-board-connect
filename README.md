@@ -1,3 +1,6 @@
+## Board-approved design refresh (Version 1.1)
+The header now uses the supplied SLDHA logo and approved slogan. This is still a public resource-link dashboard, **not** an authenticated portal. Links in `config.js` remain unconfigured. Do not store private Board records or credentials in this repository. The Board-approved initiative status does not imply the application is production-ready.
+
 # SLDHA Board Connect — Free PWA Starter
 
 This is a **public-facing shortcut dashboard**, not a private authentication system. It stores **no** confidential Board data, passwords, patient data, or personal health information. Official Association branding and links must be approved before public launch.
