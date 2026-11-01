@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function approved() {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/boardMembers/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/boardMembers/$(request.auth.uid)).data.active == true;
+    }
+    match /boardMembers/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, create, update, delete: if false;
+    }
+    match /boardSettings/resources {
+      allow get: if approved();
+      allow list, create, update, delete: if false;
+    }
+    match /{document=**} {allow read, write: if false;}
+  }
+}

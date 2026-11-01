@@ -2,3 +2,5 @@
 
 /* Board-approved branding refresh */
 .brand-logo{width:160px;max-width:38vw;height:100px;object-fit:contain;filter:drop-shadow(0 4px 12px rgba(0,0,0,.12))}.top{align-items:center;gap:1.3rem}.hero{background:linear-gradient(125deg,#082d57 0%,#125f9b 65%,#167ab2 100%)}.lead{font-size:clamp(1.05rem,2.5vw,1.5rem);letter-spacing:.01em}.status{border:1px solid #ffffff55;background:#ffffff1a}.tile{transition:transform .2s ease,box-shadow .2s ease}.tile.ready:hover{transform:translateY(-3px)}@media(max-width:480px){.brand-logo{width:110px;height:80px}.top{gap:.6rem}.eyebrow{font-size:.56rem}}
+
+.auth-panel{max-width:720px;margin:1rem auto 1.5rem;padding:1.5rem;border:1px solid #cbd5e1;border-radius:16px;background:#f8fafc;text-align:center}.auth-panel button{padding:.8rem 1.3rem;margin:.35rem;border:0;border-radius:10px;background:#124a91;color:white;font-weight:700;cursor:pointer}.auth-panel button:disabled{opacity:.5;cursor:not-allowed}.auth-panel .uid{overflow-wrap:anywhere;font-size:.85rem;background:#e2e8f0;padding:.7rem;border-radius:8px}#boardContent[hidden],#signOutButton[hidden],#signInButton[hidden],#memberUid[hidden]{display:none!important}
